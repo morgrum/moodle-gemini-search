@@ -1,0 +1,46 @@
+{
+  "name": "Moodle Gemini Search Extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for instant AI assistance using Ctrl+G with Google Gemini API",
+  "description_long": "A dedicated Chrome extension that provides instant AI assistance using Google's Gemini API. Press Ctrl+G anywhere to get intelligent responses about the current page content. Features include page content analysis, image processing, text selection, and smart responses using Gemini 1.5 Flash and Pro models.",
+  "changelog": [
+    "Initial release with Ctrl+G functionality",
+    "Embedded API key for immediate use",
+    "Support for page content and image analysis",
+    "Draggable popup interface",
+    "Automatic model selection and usage tracking"
+  ],
+  "download_url": "https://github.com/morgrum/moodle-gemini-search/raw/main/Moodle-Gemini-Search-Latest.zip",
+  "github_url": "https://github.com/morgrum/moodle-gemini-search",
+  "last_updated": "2025-10-25T00:16:58.426502",
+  "files": {
+    "manifest.json": "Extension configuration and permissions",
+    "content.js": "Main content script with Ctrl+G functionality",
+    "background.js": "Background service worker with API integration",
+    "icon16.png": "16x16 extension icon",
+    "icon48.png": "48x48 extension icon",
+    "icon128.png": "128x128 extension icon",
+    "README.md": "Installation and usage instructions",
+    "test_extension.html": "Test page for extension functionality"
+  },
+  "features": [
+    "Press Ctrl+G anywhere for instant AI assistance",
+    "Analyzes page content and images automatically",
+    "Supports text selection for targeted analysis",
+    "Uses Gemini 1.5 Flash and Pro models",
+    "Embedded API key for immediate use",
+    "Draggable and responsive popup interface",
+    "Automatic usage tracking and model selection"
+  ],
+  "installation": {
+    "method": "Load unpacked extension",
+    "steps": [
+      "Download the extension ZIP file",
+      "Extract to a folder",
+      "Open Chrome and go to chrome://extensions/",
+      "Enable Developer mode",
+      "Click 'Load unpacked' and select the folder",
+      "Test by pressing Ctrl+G on any webpage"
+    ]
+  }
+}
