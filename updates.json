@@ -12,7 +12,7 @@
   ],
   "download_url": "https://github.com/morgrum/moodle-gemini-search/raw/main/Moodle-Gemini-Search-Latest.zip",
   "github_url": "https://github.com/morgrum/moodle-gemini-search",
-  "last_updated": "2025-10-25T00:48:21.522819",
+  "last_updated": "2025-10-25T01:05:15.770110",
   "files": {
     "manifest.json": "Extension configuration and permissions",
     "content.js": "Main content script with Ctrl+G functionality",
