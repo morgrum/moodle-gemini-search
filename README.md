@@ -118,3 +118,45 @@ For issues or questions:
 ---
 
 **Note**: This extension uses Google's Gemini API with an embedded API key. Usage is subject to Google's API terms and rate limits.
+
+---
+
+## Figure Extraction Utility
+
+Alongside the Chrome extension, this repository now includes a standalone helper
+script for harvesting meaningful figures from large PDF collections.
+
+### Features
+
+- **Context-aware naming**: Saves each exported image using text found near the
+  figure (captions, references, headings) rather than dumping raw page numbers.
+- **Full-page scan filtering**: Skips pages that are just single bitmap scans to
+  avoid noise in the output.
+- **Vector drawing capture**: Renders chart- or diagram-like vector drawings in
+  addition to embedded raster images.
+
+### Requirements
+
+```bash
+pip install pymupdf
+```
+
+### Usage
+
+```bash
+python extract_pdf_figures.py --input /path/to/pdf_or_folder --output ./figures
+```
+
+Key options:
+
+- `--context-words`: maximum number of nearby words to include in the filename
+  (default: 20).
+- `--context-margin`: how far from the figure (in PDF points) to look for
+  naming context (default: 48).
+- `--full-page-ratio`: skip images occupying more than this fraction of a page
+  (default: 0.9).
+- `--min-area-ratio`: ignore very small graphics (default: 0.01).
+
+Each PDF gets its own folder under the chosen output directory. Figures are
+saved in PNG format with filenames like
+`report_p003_img01_figure-2-process-overview.png`.

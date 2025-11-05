@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Gemini Search Extension Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            background: #f0f8ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #2196F3;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .instructions {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Moodle Gemini Search Extension Test Page</h1>
+    
+    <div class="instructions">
+        <h3>📋 Test Instructions</h3>
+        <ol>
+            <li><strong>Install the extension</strong> in Chrome (chrome://extensions/)</li>
+            <li><strong>Press Ctrl+G</strong> to test the AI search functionality</li>
+            <li><strong>Select text</strong> and press Ctrl+G for targeted analysis</li>
+            <li><strong>Check the console</strong> (F12) for any error messages</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 Test Content for AI Analysis</h2>
+        <p>This page contains various types of content that the Gemini AI can analyze:</p>
+        
+        <h3>📚 Educational Content</h3>
+        <p>The <span class="highlight">Moodle Gemini Search Extension</span> is designed to help students and educators get instant AI assistance while browsing educational content. It can analyze course materials, assignments, and study resources to provide helpful insights and explanations.</p>
+        
+        <h3>🧮 Mathematical Concepts</h3>
+        <p>Here's a sample mathematical problem: <strong>Solve for x: 2x + 5 = 13</strong></p>
+        <p>The solution involves isolating the variable x by performing algebraic operations on both sides of the equation.</p>
+        
+        <h3>🌍 Geography Information</h3>
+        <p>Paris is the capital and largest city of France. It is located in the north-central part of the country and is known for landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral.</p>
+        
+        <h3>🔬 Scientific Concepts</h3>
+        <p>Photosynthesis is the process by which plants convert light energy into chemical energy. The general equation is: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂</p>
+    </div>
+
+    <div class="test-section">
+        <h2>🖼️ Test Images</h2>
+        <p>These images can be analyzed by the AI:</p>
+        
+        <!-- Sample images for testing -->
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzQyYTVmNSIvPgogIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+U2FtcGxlIEltYWdlIDE8L3RleHQ+Cjwvc3ZnPg==" alt="Sample Image 1">
+        
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzI4YTc0NSIvPgogIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+U2FtcGxlIEltYWdlIDI8L3RleHQ+Cjwvc3ZnPg==" alt="Sample Image 2">
+    </div>
+
+    <div class="test-section">
+        <h2>📝 Test Text Selection</h2>
+        <p>Try selecting different parts of this text and pressing Ctrl+G:</p>
+        
+        <blockquote style="background: #f8f9fa; padding: 15px; border-left: 4px solid #6c757d; margin: 15px 0;">
+            "The only way to learn mathematics is to do mathematics." - Paul Halmos
+        </blockquote>
+        
+        <p>This quote emphasizes the importance of practice in learning mathematical concepts. The AI should be able to analyze and explain the meaning behind this educational philosophy.</p>
+    </div>
+
+    <div class="test-section">
+        <h2>🔧 Technical Test Information</h2>
+        <p><strong>Page URL:</strong> <span id="page-url"></span></p>
+        <p><strong>Content Length:</strong> <span id="content-length"></span> characters</p>
+        <p><strong>Images Found:</strong> <span id="image-count"></span></p>
+        <p><strong>Extension Status:</strong> <span id="extension-status">Checking...</span></p>
+    </div>
+
+    <div class="instructions">
+        <h3>✅ Expected Behavior</h3>
+        <ul>
+            <li>Pressing <strong>Ctrl+G</strong> should show a loading popup</li>
+            <li>The popup should display an AI response about this page content</li>
+            <li>Selecting text and pressing <strong>Ctrl+G</strong> should analyze only the selected text</li>
+            <li>The popup should be draggable and closeable</li>
+            <li>No errors should appear in the browser console</li>
+        </ul>
+    </div>
+
+    <script>
+        // Update page information
+        document.getElementById('page-url').textContent = window.location.href;
+        document.getElementById('content-length').textContent = document.body.innerText.length;
+        document.getElementById('image-count').textContent = document.querySelectorAll('img').length;
+        
+        // Check if extension is loaded
+        setTimeout(() => {
+            const extensionStatus = document.getElementById('extension-status');
+            if (window.chrome && window.chrome.runtime) {
+                extensionStatus.textContent = 'Extension API available';
+                extensionStatus.style.color = 'green';
+            } else {
+                extensionStatus.textContent = 'Extension API not available';
+                extensionStatus.style.color = 'red';
+            }
+        }, 1000);
+        
+        // Log test information
+        console.log('🧪 Test page loaded for Moodle Gemini Search Extension');
+        console.log('📄 Page content length:', document.body.innerText.length);
+        console.log('🖼️ Images found:', document.querySelectorAll('img').length);
+        console.log('🔗 Page URL:', window.location.href);
+    </script>
+</body>
+</html>
