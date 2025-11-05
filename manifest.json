@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Gemini Search",
+  "version": "1.0.0",
+  "description": "Press Ctrl+G anywhere to get instant AI assistance with Gemini. Scans page content and provides intelligent responses.",
+  
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  
+  "host_permissions": [
+    "*://*.moodle.abtech.edu/*",
+    "*://moodle.abtech.edu/*",
+    "*://*.isol.abtech.edu/*",
+    "*://isol.abtech.edu/*",
+    "file://*/*.html"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.moodle.abtech.edu/*",
+        "*://moodle.abtech.edu/*",
+        "file://*/*.html"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  
+  "commands": {
+    "ask-gemini": {
+      "suggested_key": {
+        "default": "Ctrl+G"
+      },
+      "description": "Ask Gemini about current page content"
+    }
+  }
+}
